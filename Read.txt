@@ -1,0 +1,1 @@
+Project covers all the basics of Flexbox. 
