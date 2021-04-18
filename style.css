@@ -1,0 +1,57 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+/* Look which way your content will flow. If horizontally then that is main
+axsis. If vertically than that is main axsis
+If you want your content to go on mutiple lines then use flex-wrap
+add display flex to children elemnets as well
+By default all the elements have order 0. Item with higher order goes at the end
+Flex grow can be used to modify the size of the conatiner
+It will grow the size of the item container to take the rest of the size
+Flexshrink opposite of flex-grow
+flex-grow, shrink and basis(width) can all be combine to one property
+flex:1 1 300px*/
+.parent{
+  height: 100vh;
+  border: 20px solid black;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.child1{
+  height: 200px;
+  background: blue;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  flex: 1 1 200px;
+}
+.child2{
+  height: 200px;
+  background: red;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  order: 3;
+  flex: 1 1 200px;
+}
+.child3{
+  height: 200px;
+  background: green;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  order: 4;
+  flex: 1 1 200px;
+}
+/* .child4{
+  width: 200px;
+  height: 200px;
+  background: purple;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  order: 2;
+} */
